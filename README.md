@@ -4,7 +4,10 @@
 ## Résumé
 En résumé, ce laboratoire agissait comme une simulation d’une panne serveur. En effet, les deux ordinateurs qui comportaient les pages web servaient de service à offrir, et l’ordinateur exécutant **nginx** servait d’égaliseur de charge.  
 
-Dans ce cas-ci, les deux pages web étaient différentes, mais dans un contexte réel, elles auraient pu être identiques. Ainsi, nous avons pu observer comment **nginx** effectuait la gestion des services, puisqu’il faisait la répartition des connexions entre les serveurs. Lorsque l’un de ceux-ci tombait « en panne », **nginx** redirigeait automatiquement la connexion vers un autre serveur disponible.
+Dans ce cas-ci, les deux pages web étaient différentes, mais dans un contexte réel, elles auraient pu êtres identiques. Ainsi, nous avons pu observer comment **nginx** effectuait la gestion des services, puisqu’il faisait la répartition des connexions entre les serveurs. Lorsque l’un de ceux-ci tombait « en panne », **nginx** redirigeait automatiquement la connexion vers un autre serveur disponible.
+
+Au niveau de l'architecture, l'égalisateur de charge est un dispositif utile afin d'éviter un arrêt de service si jamais un des deux serveur arrête de fonctionner.
+C'est un atout incontournable pour la gestion de service et permettre une bonne disponibilité.
 
 ---
 
